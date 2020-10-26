@@ -1,0 +1,58 @@
+*{
+/
+}
+.maingrid{
+	text-align: center;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.2fr 1fr 1fr 1fr;
+	grid-template-areas: 
+	"nav nav nav nav"
+	"div div div div"
+	"pic pic pic pic";
+}
+nav{
+	grid-area: nav;
+	font-size: 20px;
+}
+.container{
+  box-shadow: 0px 5px 8px 3px grey;
+  position:relative;
+  top:0px;
+  left:0px;
+  height:320px;
+  width: 350px;
+  font-size: 16px;
+  font-style: italic;
+  color: #05fff7;
+   margin-bottom: 15px;
+    background-image: url("https://picsum.photos/id/0/5616/3744");
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+   transition: 1s;
+}
+.container:hover{
+  transform: scale(1.1);
+  
+}
+.banner{
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+button{
+	background-color: #eeeeee;
+	border-radius:  5px 5px 5px 5px;
+}
+img{
+	/*clip-path: circle(35px);*/
+	margin-top: 5px;
+	z-index: 99;
+	width: 200px;
+	height: 195px;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 0px 5px 8px 3px grey;
+	
+}
